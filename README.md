@@ -38,4 +38,4 @@ client-side (browser localStorage) for this prototype.
 - **Ishikawa Diagram**: causes analysis for campus/community crime — see https://github.com/KLASSICVKAY/SIM-security-incident-mapping/blob/main/Mind-14-34-55.png  for content to build in draw.io
 - **Use-Case Diagram**: see `SUPPORTING_ARTIFACT` for actors/relationships to sketch in draw.io
 - **Google Form**: questionnaire structure for students, staff, and landlords — see https://docs.google.com/forms/d/1SiZQ0WdeOKh0Sx5nPao0jgpyOGFtrGeGmkg33fVQjOU/viewform
-- **SRS Document**: `SIM_SRS.docx`
+- **SRS Document**: https://github.com/KLASSICVKAY/SIM-security-incident-mapping/blob/main/SIM_SRS.docx

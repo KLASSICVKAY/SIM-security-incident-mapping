@@ -35,7 +35,7 @@ Plain HTML, CSS, and JavaScript — no build step required. Data is stored
 client-side (browser localStorage) for this prototype.
 
 ## Related Artifacts
-- **Ishikawa Diagram**: causes analysis for campus/community crime — see `SUPPORTING_ARTIFACTS.md` for content to build in draw.io
+- **Ishikawa Diagram**: causes analysis for campus/community crime — see  `Mind-14-34-55.png`for content to build in draw.io
 - **Use-Case Diagram**: see `SUPPORTING_ARTIFACTS.md` for actors/relationships to sketch in draw.io
 - **Google Form**: questionnaire structure for students, staff, and landlords — see https://docs.google.com/forms/d/1SiZQ0WdeOKh0Sx5nPao0jgpyOGFtrGeGmkg33fVQjOU/viewform
 - **SRS Document**: `SIM_SRS.docx`

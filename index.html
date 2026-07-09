@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SIM — Security Incident Mapping</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">SIM</span>
+      <span class="brand-sub">Security Incident Mapping</span>
+    </div>
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="report">Report Incident</button>
+      <button class="tab-btn" data-tab="feed">Incident Feed</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- REPORT TAB -->
+    <section id="report" class="tab-panel active">
+      <div class="panel-inner">
+        <h1>Report a Security Incident</h1>
+        <p class="lead">Help keep your campus community safe. Reports can be submitted anonymously.</p>
+
+        <form id="reportForm">
+          <label for="type">Incident Type *</label>
+          <select id="type" required>
+            <option value="" disabled selected>Select incident type</option>
+            <option>Stabbing</option>
+            <option>Rape / Sexual Assault</option>
+            <option>Stealing / Theft</option>
+            <option>Murder</option>
+            <option>Assault</option>
+            <option>Suspicious Activity</option>
+            <option>Other</option>
+          </select>
+
+          <label for="location">Location *</label>
+          <input id="location" type="text" placeholder="e.g. Behind Hall C, Iya Moria street" required />
+
+          <label for="datetime">Date & Time</label>
+          <input id="datetime" type="datetime-local" />
+
+          <label for="description">Description</label>
+          <textarea id="description" rows="4" placeholder="Optional — describe what happened"></textarea>
+
+          <div class="anon-row">
+            <label class="checkbox-label">
+              <input type="checkbox" id="anonymous" checked />
+              Report anonymously
+            </label>
+          </div>
+
+          <div id="contactWrap" class="hidden">
+            <label for="contact">Contact (name / phone / email)</label>
+            <input id="contact" type="text" placeholder="Optional" />
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Report</button>
+          <p id="confirmMsg" class="confirm-msg hidden">✅ Report submitted. Thank you for helping keep the community safe.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FEED TAB -->
+    <section id="feed" class="tab-panel">
+      <div class="panel-inner">
+        <h1>Incident Feed</h1>
+        <p class="lead">Recent reports from the community.</p>
+        <div id="feedList" class="feed-list"></div>
+        <p id="emptyState" class="empty-state hidden">No incidents reported yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>SIM Prototype — SEN202 Weekend 1 Project · Built for academic demonstration only</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
